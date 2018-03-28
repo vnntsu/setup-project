@@ -1,6 +1,5 @@
 language: objective-c
-osx_image: xcode9
-xcode_project: ./setup-project.xcproject
-xcode_scheme: setup-prject
+osx_image: xcode9.2
+xcode_project: ./setup-project.xcworkspace
+xcode_scheme: setup-project
 podfile: ./Podfile
-xcode_sdk: iphonesimulator10
