@@ -1,4 +1,6 @@
 language: objective-c
+osx_image: xcode9
 xcode_project: ./setup-project.xcproject
 xcode_scheme: setup-prject
 podfile: ./Podfile
+xcode_sdk: iphonesimulator10
