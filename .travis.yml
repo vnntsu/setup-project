@@ -1,0 +1,4 @@
+language: objective-c
+xcode_project: ./setup-project.xcproject
+xcode_scheme: setup-prject
+podfile: ./Podfile
