@@ -4,9 +4,9 @@ podfile: ./Podfile
 
 env:
   global:
-    - PROJECT='setup-project'
-    - SCHEME='setup-project'
-    - WORKSPACE='$PROJECT.xcworkspace'
+    - PROJECT="setup-project"
+    - SCHEME="setup-project"
+    - WORKSPACE=""$PROJECT.xcworkspace"
 
 install:
   ./scripts/install
