@@ -3,6 +3,7 @@ use_frameworks!
 
 target 'setup-project' do
   pod 'SwiftUtils'
+  pod 'SwiftLint'
 
 
   target 'setup-projectTests' do

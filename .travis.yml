@@ -4,8 +4,8 @@ podfile: ./Podfile
 
 env:
   global:
-    - PROJECT="setup-project"
     - SCHEME="setup-project"
+    - PROJECT="setup-project"
     - WORKSPACE="$PROJECT.xcworkspace"
 
 install:
@@ -14,4 +14,5 @@ install:
 
 script:
   - ./scripts/branch
+  - ./scripts/linter
   - xcodebuild -sdk iphonesimulator -workspace $WORKSPACE -scheme $SCHEME
