@@ -9,7 +9,8 @@ env:
     - WORKSPACE="$PROJECT.xcworkspace"
 
 install:
-  ./scripts/install
+  - set -o pipefail
+  - ./scripts/install
 
 script:
   - ./scripts/branch
