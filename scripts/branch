@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "Branch name: $TRAVIS_PULL_REQUEST_BRANCH"
+
+if [[ "$TRAVIS_PULL_REQUEST_BRANCH" == 'master' ]]; then
+  exit 0
+fi
+
+for FREFIX in feature hotfix bugfix; do
+  if [[ "$TRAVIS_PULL_REQUEST_BRANCH" == $FREFIX/* ]]; then
+    exit 0
+  fi
+done
+
+echo "Branch name does not pass convention"
+exit 1
