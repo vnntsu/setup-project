@@ -3,4 +3,5 @@ osx_image: xcode9.2
 podfile: ./Podfile
 
 script:
+  - ./scripts/branch
   - xcodebuild -sdk iphonesimulator -workspace setup-project.xcworkspace -scheme setup-project
