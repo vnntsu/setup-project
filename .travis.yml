@@ -10,7 +10,7 @@ env:
 
 install:
   - set -o pipefail
-  ./scripts/install
+  - ./scripts/install
 
 script:
   - ./scripts/branch
