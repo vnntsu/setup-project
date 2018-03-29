@@ -1,7 +1,10 @@
 #!/bin/bash
 
-if [ "$TRAVIS_PULL_REQUEST" != "false" ]
-then
-  swiftlint --reporter json > swiftlint-report.json || false
+swiftlint --reporter json > swiftlint-report.json || false
+
+echo "REPO_SLUG = $TRAVIS_REPO_SLUG"
+echo "PR_NUMBER = $TRAVIS_PULL_REQUEST"
+
+if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
   linterbot $TRAVIS_REPO_SLUG $TRAVIS_PULL_REQUEST < swiftlint-report.json
 fi
