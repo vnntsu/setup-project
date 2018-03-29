@@ -2,5 +2,15 @@ language: objective-c
 osx_image: xcode9.2
 podfile: ./Podfile
 
+env:
+  global:
+    - PROJECT="setup-project"
+    - SCHEME="setup-project"
+    - WORKSPACE="$PROJECT.xcworkspace"
+
+install:
+  ./scripts/install
+
 script:
-  - xcodebuild -sdk iphonesimulator -workspace setup-project.xcworkspace -scheme setup-project
+  - ./scripts/branch
+  - xcodebuild -sdk iphonesimulator -workspace $WORKSPACE -scheme $SCHEME
