@@ -9,6 +9,7 @@ env:
     - WORKSPACE="$PROJECT.xcworkspace"
 
 install:
+  - set -o pipefail
   ./scripts/install
 
 script:
