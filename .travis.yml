@@ -15,4 +15,4 @@ install:
 script:
   - ./scripts/branch
   - ./scripts/linter
-  - fastlane beta
+  - bundle exec fastlane tests
