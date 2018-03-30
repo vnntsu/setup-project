@@ -15,4 +15,4 @@ install:
 script:
   - ./scripts/branch
   - ./scripts/linter
-  - xcodebuild -sdk iphonesimulator -workspace $WORKSPACE -scheme $SCHEME
+  - fastlane beta
