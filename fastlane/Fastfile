@@ -13,6 +13,6 @@ setup_travis
 
 lane :tests do
   run_tests(workspace: "setup-project.xcworkspace",
-            devices: ["iPhone 6"],
+            devices: ["iPhone 6s"],
             scheme: "setup-project")
 end
